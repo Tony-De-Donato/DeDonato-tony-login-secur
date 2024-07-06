@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "0e0b4220-85a3-407b-a312-83b408c91b13",
+		"name": "login_tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26850055"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adresse@gmail.com\",\r\n    \"password\": \"MotDePasse\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Securite/SignUp/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Securite",
+						"SignUp",
+						""
+					],
+					"query": [
+						{
+							"key": "1",
+							"value": "johny",
+							"description": "first",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adresse@gmail.com\",\r\n    \"password\": \"MotDePasse\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Securite/SignIn/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Securite",
+						"SignIn",
+						""
+					],
+					"query": [
+						{
+							"key": "1",
+							"value": "johny",
+							"description": "first",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PasswordChange",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adresse@gmail.com\",\r\n    \"password\": \"nouveauMotDePasse\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Securite/ChangePassword/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Securite",
+						"ChangePassword",
+						""
+					],
+					"query": [
+						{
+							"key": "1",
+							"value": "johny",
+							"description": "first",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adresse@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Securite/DeleteAccount/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Securite",
+						"DeleteAccount",
+						""
+					],
+					"query": [
+						{
+							"key": "1",
+							"value": "johny",
+							"description": "first",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirmation SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adresse@gmail.com\",\r\n    \"otp\": \"267543\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Securite/ConfirmSignUp/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Securite",
+						"ConfirmSignUp",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirmation Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adresse@gmail.com\",\r\n    \"otp\": \"140231\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Securite/ConfirmDelete/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Securite",
+						"ConfirmDelete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirmation PasswordChange",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adresse@gmail.com\",\r\n    \"otp\": \"210412\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Securite/ConfirmPasswordChange/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Securite",
+						"ConfirmPasswordChange",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,9 @@
+
+{
+    "host": "localhost",
+    "username": "tony",
+    "password": "devine0405",
+    "dbName": "login_securise",
+
+    "otpValidTime": 86400
+}
